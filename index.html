@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Baking with the Gemini API</title>
+</head>
+
+<body>
+  <main>
+    <h1>Baking with the Gemini API</h1>
+    <form>
+      <div class="image-picker">
+        <label class="image-choice">
+          <input type="radio" checked name="chosen-image" value="https://upload.wikimedia.org/wikipedia/commons/2/24/Ayam_geprek.png">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Ayam_geprek.png">
+        </label>
+        <label class="image-choice">
+          <input type="radio" name="chosen-image" value="https://images.unsplash.com/photo-1680674814945-7945d913319c">
+          <img src="https://images.unsplash.com/photo-1680674814945-7945d913319c">
+        </label>
+        <label class="image-choice">
+          <input type="radio" name="https://images.unsplash.com/photo-1687425973269-af0d62587769">
+          <img src="https://images.unsplash.com/photo-1687425973269-af0d62587769">
+        </label>
+        <label class="image-choice">
+          <input type="radio" name="chosen-image" value="https://images.unsplash.com/photo-1659758058868-214380ccf253">
+          <img src="https://images.unsplash.com/photo-1659758058868-214380ccf253">
+        </label>
+      </div>
+      <div class="prompt-box">
+        <label>
+          <input name="prompt" placeholder="Enter instructions here" type="text"
+            value="Provide an example recipe for the baked goods in the image">
+        </label>
+        <button type="submit">Go</button>
+      </div>
+    </form>
+    <p class="output">(Results will appear here)</p>
+  </main>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
